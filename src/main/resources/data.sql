@@ -1,0 +1,2 @@
+INSERT INTO wine (wine_name, varietal, vintage_year, color, appellation, quantity, bottle_price, tasting_note) 
+VALUES ('Peju', 'Cabernet Sauvignon', '2019', 'red', 'Rutherford', '6', '75', 'cherries on the nose, big bold tannins, great mouth feel');

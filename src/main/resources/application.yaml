@@ -1,0 +1,32 @@
+spring:
+   datasource:
+      username: wine_cellar
+      password: wine_cellar
+      url: jdbc:mysql://localhost:3306/wine_cellar
+
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true
+      defer-datasource-initialization: true
+
+   security:
+      basic:
+         enabled: true # Enable basic authentication
+      user:
+         name: user # Default username
+         password: password # Default password
+
+sql:
+   init:
+      mode: always
+
+logging:
+   level:
+      org:
+         hibernate:
+            SQL: DEBUG
+            type:
+               descriptor:
+                  sql:
+                     BasicBinder: TRACE
